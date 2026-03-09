@@ -11,6 +11,7 @@ public class Car
     public string EngineNoise { get; set; }
     public string HonkNoise { get; set; }
     public bool IsDriveable { get; set; }
+   
 
     public void MakeEngineNoise()
     {
@@ -22,8 +23,8 @@ public class Car
         Console.WriteLine($"The horn makes a {HonkNoise} sound");
     }
 
-    public void ShowData()
+    public Car()
     {
-        Console.WriteLine($"This car is a {Year}-{Make}-{Model}- Driving condition is {IsDriveable}");
+        CarLot.numberOfCars++;
     }
 }
